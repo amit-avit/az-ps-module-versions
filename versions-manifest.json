@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.2",
   "stable": true,
-  "release_url": "https://github.com/amit-avit/az-ps-module-versions/releases/tag/0.1.0-492277587",
+  "release_url": "https://github.com/amit-avit/az-ps-module-versions/releases/tag/0.2.2-492293341",
   "files": [
     {
-      "filename": "az_0.1.0.zip",
-      "download_url": "https://github.com/amit-avit/az-ps-module-versions/releases/download/0.1.0-492277587/az_0.1.0.zip"
+      "filename": "az_0.2.2.zip",
+      "download_url": "https://github.com/amit-avit/az-ps-module-versions/releases/download/0.2.2-492293341/az_0.2.2.zip"
     }
   ]
 }
