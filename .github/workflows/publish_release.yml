@@ -16,7 +16,7 @@ jobs:
         with:
           submodules: true
 
-      - name: Assign version variable to package
+      - name: Finding version to publish
         run: |
           $version = ./Find-MinModuleVersionNotInManifest.ps1 -moduleName Az -versionsManifestPath ./versions-manifest.json
           "VERSION=$version" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf-8 -Append
