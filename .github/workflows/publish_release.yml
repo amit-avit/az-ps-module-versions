@@ -2,6 +2,8 @@ name: Generate Az ps module
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 defaults:
   run:
