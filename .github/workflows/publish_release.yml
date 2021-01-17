@@ -62,8 +62,9 @@ jobs:
                                                                -ConfigurationFile "./config/versions-manifest-config.json"
       
       - name: Checkin the generated versions-manifest.json file
+        shell: bash
         run: |
           git add ./versions-manifest.json
           git commit -m "Update versions-manifest for release ${{ env.VERSION }}
-          $remoteRepo="https://" + "$env:GITHUB_ACTOR" + ":" + "${{ secrets.GITHUB_TOKEN }}" + "@github.com/" + "$env:GITHUB_REPOSITORY" + ".git"
-          git push $remoteRepo HEAD:main
+          remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git push "${remote_repo}" HEAD:main;
