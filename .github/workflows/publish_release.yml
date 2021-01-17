@@ -65,5 +65,5 @@ jobs:
         run: |
           git add ./versions-manifest.json
           git commit -m "Update versions-manifest for release ${{ env.VERSION }}
-          $remote_repo="https://$env:GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$env:GITHUB_REPOSITORY.git"
-          git push $remote_repo HEAD:main
+          $remote_repo="https://$env:GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$($env:GITHUB_REPOSITORY).git"
+          git push "$remote_repo" HEAD:main
