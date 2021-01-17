@@ -56,7 +56,7 @@ jobs:
       
       - name: Create versions-manifest.json
         run: |
-          ./helpers/packages-generation/manifest-generator.ps1 -RepositoryFullName "${{ env:GITHUB_REPOSITORY }}" `
+          ./helpers/packages-generation/manifest-generator.ps1 -RepositoryFullName "${{ env.GITHUB_REPOSITORY }}" `
                                                                -GitHubAccessToken "${{ secrets.GITHUB_TOKEN }}" `
                                                                -OutputFile "./versions-manifest.json" `
                                                                -ConfigurationFile "./config/versions-manifest-config.json"
