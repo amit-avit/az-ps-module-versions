@@ -1,5 +1,16 @@
 [
   {
+    "version": "1.2.0",
+    "stable": true,
+    "release_url": "https://github.com/amit-avit/az-ps-module-versions/releases/tag/1.2.0-492767863",
+    "files": [
+      {
+        "filename": "az_1.2.0.zip",
+        "download_url": "https://github.com/amit-avit/az-ps-module-versions/releases/download/1.2.0-492767863/az_1.2.0.zip"
+      }
+    ]
+  },
+  {
     "version": "1.1.0",
     "stable": true,
     "release_url": "https://github.com/amit-avit/az-ps-module-versions/releases/tag/1.1.0-492693756",
