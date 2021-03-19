@@ -1,8 +1,9 @@
 name: Trigger publish
 
 on:
-  schedule:
-    - cron: "0 0 */3 * *"
+#   schedule:
+#     - cron: "0 0 */3 * *"
+  workflow_dispatch:
 
 jobs:
   trigger_pr:
